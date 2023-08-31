@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import ShoppingList from './components/ShoppingList';
+import ShoppingListForm from './components/ShoppingListForm';
 import Item from './models/item';
 import './App.css';
 
 function App() {
   const [items, setItems] = useState<Item[]>([]);
+  const addItem = (product: string) => {
+    console.log("made it to the APP component!");
+    console.log(product);
+  }
   // const items = [
   //   {
   //     id: 1,
@@ -21,6 +26,7 @@ function App() {
   return (
     <div>
       <ShoppingList items={items} />
+      <ShoppingListForm onAddItem={addItem} />
     </div>
   );
 }
