@@ -2,7 +2,11 @@
 
   ## Description
 
-  A simple REACT app for a Shopping List using TypeScript
+  A simple REACT app for a Shopping List using TypeScript.  Created as part of a TypeScript tutorial.
+
+  Screenshot below:
+
+  ![screenshot](/public/screenshot.png)
   
   ## Table of Contents
   
@@ -19,7 +23,7 @@
   
   ## Usage
   
-  Add a product and a quantity to add to your Shopping List and see it  rendered on the screen.
+  Add a product and a quantity to add to your Shopping List and see it rendered on the screen.
 
   ## License
 This application is covered under the MIT License.
