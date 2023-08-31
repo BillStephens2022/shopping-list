@@ -13,7 +13,7 @@ function ShoppingList({ items }: ShoppingListProps): JSX.Element {
       <h1>Shopping List</h1>
       <ul>
         {items.map((item) => (
-          <li key={item.id}>{item.product} - {item.quantity}</li>
+          <li key={item.id}>{item.product}, qty: {item.quantity}</li>
         ))}
       </ul>
     </div>

@@ -20,9 +20,11 @@ function ShoppingListForm({ onAddItem }: ShoppingListFormProps): JSX.Element {
 
   return(
     <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Product Name" ref={productInputRef} />
-        <input type="number" min={0} ref={quantityInputRef}/>
-        <button type="submit">Add Item</button>
+        <label htmlFor="productInput">Product</label>
+        <input name="productInput" id="productInput" type="text" placeholder="Product Name" ref={productInputRef} />
+        <label htmlFor="quantityInput">Quantity</label>
+        <input name="quantityInput" id="quantityInput" type="number" placeholder="Qty" min={0} ref={quantityInputRef} />
+        <button id="addButton" type="submit"> + </button>
     </form>
   );
 }
